@@ -1,5 +1,8 @@
 @import url('https://fonts.goog-leapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
 
+
+
+
 *{
   padding: 0;
   margin: 0;
@@ -632,6 +635,8 @@ a:hover{
 }
 
 @media(width < 750px){
+
+ 
   /* header  */
   .head{
     display: none;
@@ -644,7 +649,7 @@ a:hover{
     transition: all 1s;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: relative;
     top: 0px;
   }
 
@@ -693,15 +698,18 @@ a:hover{
     max-width: 80%;
     align-self: center;
     flex-shrink: 1;
+    
 
   }
   .header{
     flex-direction: column-reverse ;
+    
   } 
 
   .header-text{
     align-self: center;
-    text-align: center;
+    text-align: center; 
+    
   }
   .more-than-faster{
     display: flex;
@@ -710,11 +718,17 @@ a:hover{
     margin-top: 20px;
 
   }
+  .writeup{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+  }
 
   .writeupb{
-    width: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   /* .characteristics */
@@ -758,10 +772,20 @@ a:hover{
 
   .text h5 {
     color:  rgba(143, 141, 141, 0.616) ;
+
+  }
+
+  .scroll{
+    display: flex;
+    gap: 30px;
+    width: fit-content;
+    height: fit-content;
+    overflow-x: scroll; 
+    scrollbar-width: none;
+    position: static;
   }
 
   .ourmenu {
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
@@ -783,6 +807,33 @@ a:hover{
     
   }
 
+  .cit{
+    max-width: 750px;
+    padding-left: 15px;
+  }
+
+  .cit p{
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .cit h1{
+    font-size: 45px;
+    color: var(--text-dark);
+  }
+  
+  .cit .it{
+    color: var(--text-light);
+    font-weight: lighter;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 17.6;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+
   .download{
    display: flex;
    flex-direction: column-reverse;
@@ -793,10 +844,82 @@ a:hover{
     max-width: var(--max-width);
     display: flex;
     flex-direction: column;
+    justify-content: left;
+  }
+  
+
+  
+  .one p{
+    margin-top: 30px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+  
   }
   
   
-}
-
   
+  
+  
+  .about{
+   line-height: 30px; 
+   width: fit-content;
+   padding: none;
+  }
+  
+  .about p{
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .about a{
+    display: inline;
+    color: var(--text-light);
+    font-weight: normal;
+  }
+  
+  .company{
+    line-height: 30px;
+    width: fit-content;
+   padding: none;
+  }
+  
+  .company p{
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .company a{
+    display: inline;
+    color: var(--text-light);
+    font-weight: normal;
+  }
+  
+  
+  .support{
+    line-height: 30px;
+    width: fit-content;
+   padding: none;
+  }
+  
+  .support p{
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .support a{
+    display: inline;
+    color: var(--text-light);
+    font-weight: normal;
+  }
+  
+  .a:hover{
+    color: var(--primary-color);
+  }
+  
+  
+  
+}
   

@@ -10,12 +10,18 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
 
 <body>
 
   <!-- things added for mobile view  -->
-  <div class="headerb">
+  <div data-aos="zoom-in-down" data-aos-duration="500" class="headerb">
     
     <div class="logo"> <img src="logo.png" alt=""> </div>
 
@@ -53,7 +59,7 @@
    <!-- the next part after the header  -->
 
   <div class="container header">
-    <div class="header-text">
+    <div data-aos="fade-right" data-aos-duration="900" class="header-text">
       <div class="more-than-faster">
        <p class="content">More than Faster <img src="delivery-bike.png" alt="" ></p>
       </div>
@@ -63,7 +69,7 @@
     </div>
     
 
-    <div class="header-image">
+    <div data-aos="zoom-in"  data-aos-duration="900" class="header-image">
       <img class="feed" src="header.png" alt="">
     </div>
 
@@ -74,28 +80,28 @@
    <!-- what we serve  -->
 
    <div class="wws">
-    <p class="serve"> <strong> WHAT WE SERVE </strong></p>
-    <h1>Your Favourite Food </h1>
-    <h1>Delivery Partner</h1>
+    <p data-aos="zoom-in-up"  data-aos-duration="300"  class="serve"> <strong> WHAT WE SERVE </strong></p>
+    <h1 data-aos="zoom-in-up"  data-aos-duration="500" >Your Favourite Food </h1>
+    <h1 data-aos="zoom-in-up"  data-aos-duration="500" >Delivery Partner</h1>
    </div>
    
    
    <!-- characteristics  -->
     <div class="characteristics">
 
-      <div class="efb">
+      <div data-aos="flip-left" data-aos-duration="3000" class="efb">
         <img src="service-1.jpg" alt="">
         <h3>Easy To Order</h3>
         <p>You only need a few steps in ordering food</p>
       </div>
 
-      <div class="efb">
+      <div data-aos="flip-left" data-aos-duration="3000" class="efb">
         <img src="service-2.jpg" alt="">
         <h3>Fastest Delivery</h3>
         <p>Delivery that is always ontime even faster</p>
       </div>
 
-      <div class="efb">
+      <div data-aos="flip-left" data-aos-duration="3000" class="efb">
         <img src="service-3.jpg" alt="">
         <h3>Best Quality</h3>
         <p>Not only fast for us quality is also number one</p>
@@ -177,11 +183,11 @@
 
     <!-- what they say sect  -->
      <div class="customers">
-      <div class="ci">
+      <div data-aos="fade-right" data-aos-duration="1500"  class="ci">
         <img class="clienta" src="client.png" alt="">
       </div>
 
-      <div class="cit">
+      <div data-aos="fade-up" data-aos-duration="2000" class="cit">
         
         <p>WHAT THEY SAY</p>
         <h1>What Our Customer Say About Us</h1>
@@ -210,14 +216,19 @@
       <div class="dd">
       <div class="download">
         <div class="textb">
-        <p>DOWNLOAD APP</p>
-        <h1>Get Started With Fudo Today!</h1>
+        <p data-aos="fade-up"
+        data-aos-duration="500"> DOWNLOAD APP</p>
+        <h1 data-aos="fade-up"
+        data-aos-duration="1000" >Get Started With Fudo Today!</h1>
         <p class="d">Discover food wherever and whenever you want and get your food delivered on time, everytime</p>
-        <button class="btn"> Get the App</button>
+        <button data-aos="fade-up"
+        data-aos-duration="1000" class="btn"> Get the App</button>
       </div>
 
       <div class="imageb">
-        <img src="download.png" alt="">
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" src="download.png" alt="">
       </div>
       </div>
     </div>
@@ -233,7 +244,7 @@
         <a href=""> <i class="ri-twitter-fill"></i> </a>
       </div>
       </div>
-
+      
       <div class="about">
         <p>About</p>
        <p><a class="a" href="#">About Us </a></p>
@@ -265,6 +276,8 @@
 
 
      
-
+     <script>
+      AOS.init();
+    </script>
 </body>
 </html>
